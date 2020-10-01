@@ -22,7 +22,7 @@
 document.write('\
 \
 <nav class="navbar navbar-expand-lg navbar-light bg-light">\
-  <a class="navbar-brand" href="landing.html">CSE NITS</a>\
+  <a class="navbar-brand" href="#">CSE NITS</a>\
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">\
     <span class="navbar-toggler-icon"></span>\
   </button>\
@@ -45,6 +45,7 @@ document.write('\
           <a class="dropdown-item" href="question-papers.html">Question Papers</a>\
         </div>\
       </li>\
+      <a class="nav-link" href="about_us.html">About Us</a>\
       <li class="nav-item">\
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>\
       </li>\
