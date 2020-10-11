@@ -10,6 +10,94 @@
 
 <link rel="stylesheet" type="text/css" href="https://csenits.github.io/style.css">
 
+    <style>
+      *{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+.middle{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+}
+
+.menu{
+	width: 400px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.item{
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+
+.btnlist{
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	padding: 16px 20px;
+	background: #e0e3dc;
+	color: black;
+	position: relative;
+}
+
+
+.btnlist:before{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #aeb0ac;
+	left: 10%;
+	/*bottom: -10px;*/
+	transform: rotate(45deg);
+}
+
+.smenu {
+	background: #c4ccba;
+	overflow: hidden;
+	transition: max-height 0.3s;
+ 	max-height: 0;
+}
+
+.smenu a{
+	display:  block;
+	padding: 16px 26px;
+	color:  black;
+	font-size:  14px;
+	margin:  4px 0;
+	position: relative;
+}
+
+
+.smenu a:before{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: black;
+	left: 0;
+	top: 0;
+	transition: 0.3s;
+	opacity : 0;
+}
+
+.smenu a:hover:before{
+	opacity: 1;
+}
+
+.item:target .smenu{
+	max-height: 10em;
+}
+    </style>
+    
+    
     <title>CSE NITS: Academia</title>
   </head>
   <body>
