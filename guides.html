@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="https://csenits.github.io/style.css">
+
+    <style>
+      *{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+.middle{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+}
+
+.menu{
+	width: 400px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.item{
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+
+.btnlist{
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	padding: 16px 20px;
+	background: #e0e3dc;
+	color: black;
+	position: relative;
+}
+
+
+.btnlist:before{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #aeb0ac;
+	left: 10%;
+	/*bottom: -10px;*/
+	transform: rotate(45deg);
+}
+
+.smenu {
+	background: #c4ccba;
+	overflow: hidden;
+	transition: max-height 0.3s;
+ 	max-height: 0;
+}
+
+.smenu a{
+	display:  block;
+	padding: 16px 26px;
+	color:  black;
+	font-size:  14px;
+	margin:  4px 0;
+	position: relative;
+}
+
+
+.smenu a:before{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: black;
+	left: 0;
+	top: 0;
+	transition: 0.3s;
+	opacity : 0;
+}
+
+.smenu a:hover:before{
+	opacity: 1;
+}
+
+.item:target .smenu{
+	max-height: 10em;
+}
+    </style>
+    
+    
+    <title>CSE NITS: Academia</title>
+  </head>
+  <body>
+  <script src="navBar.js"></script>
+  <div class="container">
+    <h1>CSE Books Resources</h1>
+    Subjectwise e-books for all semesters will be uploaded here. 
+    
+      <div class="middle">
+        <div class="menu">
+            <li class="item" id="sem1">
+                <a href="#sem1" class="btnlist">Semester I</a>
+                <div class="smenu">
+                    <a href="books/11sample.pdf">Subject 1.1</a>
+                    <a href="#">Subject 1.2</a>
+                    <a href="#">Subject 1.3</a>
+                </div>
+            </li>
+
+
+            <li class="item" id="sem2">
+                <a href="#sem2" class="btnlist">Semester II</a>
+                <div class="smenu">
+                    <a href="books/21sample.pdf">Subject 2.1</a>
+                    <a href="#">Subject 2.2</a>
+                    <a href="#">Subject 2.3</a>
+                </div>
+            </li>
+
+
+
+            <li class="item" id="sem3">
+                <a href="#sem3" class="btnlist">Semester III</a>
+                <div class="smenu">
+                    <a href="books/31sample.pdf">Subject 3.1</a>
+                    <a href="#">Subject 3.2</a>
+                    <a href="#">Subject 3.3</a>
+                </div>
+            </li>
+            <li class="item" id="sem4">
+                <a href="#sem4" class="btnlist">Semester IV</a>
+                <div class="smenu">
+                    <a href="books/41sample.pdf">Subject 4.1</a>
+                    <a href="#">Subject 4.2</a>
+                    <a href="#">Subject 4.3</a>
+                </div>
+            </li>
+            <li class="item" id="sem5">
+                <a href="#sem5" class="btnlist">Semester V</a>
+                <div class="smenu">
+                    <a href="books/51sample.pdf">Subject 5.1</a>
+                    <a href="#">Subject 5.2</a>
+                    <a href="#">Subject 5.3</a>
+                </div>
+            </li>
+            <li class="item" id="sem6">
+                <a href="#sem6" class="btnlist">Semester VI</a>
+                <div class="smenu">
+                    <a href="books/61sample.pdf">Subject 6.1</a>
+                    <a href="#">Subject 6.2</a>
+                    <a href="#">Subject 6.3</a>
+                </div>
+            </li>
+            <li class="item" id="sem7">
+                <a href="#sem7" class="btnlist">Semester VII</a>
+                <div class="smenu">
+                    <a href="books/71sample.pdf">Subject 7.1</a>
+                    <a href="#">Subject 7.2</a>
+                    <a href="#">Subject 7.3</a>
+                </div>
+            </li>
+            <li class="item" id="sem8">
+                <a href="#sem8" class="btnlist">Semester VIII</a>
+                <div class="smenu">
+                    <a href="books/81sample.pdf">Subject 8.1</a>
+                    <a href="#">Subject 8.2</a>
+                    <a href="#">Subject 8.3</a>
+                </div>
+            </li>
+
+
+        </div>
+    </div>  
+
+
+
+    
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
